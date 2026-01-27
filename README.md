@@ -8,12 +8,19 @@ combinée de trois patrons créationnels :
 On vas suivre la method GoF une factory method donc nous evitons le switch
 
 ### Factory method
-- [ ] enum ProduitType {quebecois, Persian, Modern}
 - [ ] integration des interfaces (IBasement, IStructure, IInterior, IRoof)
-- [ ] IBasementFactory  <- [QuebecoisBasementFactory, PersianBasementFactory, ModernBasementFactory   [ return IBasement
-- [ ] IStructureFactory <- [QuebecoisStructureFactory, PersianStructureFactory, ModernStructureFactory[ return IStructure
-- [ ] IInteriorFactory  <- [QuebecoisInteriorFactory, PersianInteriorFactory, ModernInteriorFactory   [ return IInterior
-- [ ] IRoofFactory      <- [QuebecoisRoofFactory, PersianRoofFactory, ModernRoofFactory               [ return IRoof
+
+- [ ] IBasementFactory  <- QuebecoisBasementFactory, PersianBasementFactory, ModernBasementFactory
+- [ ] subclass de IBasementFactory retourne IBasement
+    
+- [ ] IStructureFactory <- QuebecoisStructureFactory, PersianStructureFactory, ModernStructureFactory
+- [ ] subclass de IStructureFactory retourne IStructure
+      
+- [ ] IInteriorFactory  <- QuebecoisInteriorFactory, PersianInteriorFactory, ModernInteriorFactory
+- [ ] subclass de IInteriorFactory retourne IInterior
+
+- [ ] IRoofFactory      <- QuebecoisRoofFactory, PersianRoofFactory, ModernRoofFactoryreturn
+- [ ] subclass de IRoofFactory retourne IRoof
 
 ### Builder
 - [ ]
