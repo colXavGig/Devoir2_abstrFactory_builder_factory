@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Devoir2_abstrFactory_builder_factory.Data.Product.Structure
 {
-    internal class QuebecoisStructure: IStructure
+    internal class QuebecoisStructure : IStructure
     {
+        public string display()
+        {
+            return "quebecois structure";
+        }
     }
 }
